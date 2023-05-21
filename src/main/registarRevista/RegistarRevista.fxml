@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="revistaForm" alignment="CENTER" prefHeight="550.0" prefWidth="800.0" style="-fx-border-color: #6a8d92;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.registarRevista.RegistarRevistaController">
+   <children>
+      <Label text="Registar Revista" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Label>
+      <VBox prefHeight="245.0" prefWidth="798.0" style="-fx-border-color: #6a8d92;">
+         <children>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label text="Título" textAlignment="RIGHT" textFill="#060d3f" wrapText="true" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Edição" textFill="#060d3f" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="280.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="77.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="tituloItem" prefWidth="35.0" promptText="Ex.: Escola do Amor" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="edicaoRevista" prefWidth="35.0" promptText="Ex.: 1ª Edição" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label text="ISSN" textAlignment="RIGHT" textFill="#060d3f" wrapText="true" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Editora" textFill="#060d3f" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="290.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="77.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="issnRevista" prefWidth="35.0" promptText="Ex.: 459358" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="editoraRevista" prefWidth="35.0" promptText="Ex.: Companhia das Letras" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label text="Número de Páginas" textAlignment="RIGHT" textFill="#060d3f" wrapText="true" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Data de Publicação" textFill="#060d3f" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="130.0" prefWidth="800.0">
+               <children>
+                  <TextField fx:id="numeroRevista" prefWidth="35.0" promptText="Ex.: 102" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="dataItem" prefWidth="35.0" promptText="Ex.: 25-11-2022" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="130.0" prefWidth="800.0">
+               <children>
+                  <ComboBox fx:id="listaAutor" onAction="#adicionarAutor" prefWidth="365.0" promptText="Selecione Autor" style="-fx-background-color: white; -fx-border-color: CDCBCB; -fx-border-radius: 2px solid;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="15.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="guardarRevista" mnemonicParsing="false" onAction="#btnRegistarRevista" style="-fx-background-color: #060d3f; -fx-border-color: #6a8d92; -fx-border-radius: 2px solid;" text="Guardar" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

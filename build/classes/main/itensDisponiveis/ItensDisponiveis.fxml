@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="disponiveisForm" alignment="CENTER" prefHeight="550.0" prefWidth="800.0" style="-fx-border-color: #6a8d92;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.itensDisponiveis.ItensDisponiveisController">
+   <children>
+      <Label text="Itens Disponíveis" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Label>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <TableView fx:id="tbvItens" prefHeight="200.0">
+               <columns>
+                  <TableColumn fx:id="codigo" minWidth="110.0" prefWidth="141.0" text="Código" />
+                  <TableColumn fx:id="tipo" minWidth="77.0" prefWidth="151.0" text="Tipo" />
+                  <TableColumn fx:id="titulo" minWidth="80.0" prefWidth="156.0" text="Título" />
+                  <TableColumn fx:id="data" minWidth="66.0" prefWidth="180.0" text="Data de Publicação" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="item" promptText="Ex.: 1" />
+                  <Button mnemonicParsing="false" onAction="#btnItem" style="-fx-background-color: #060d3f; -fx-border-color: #6a8d92; -fx-border-radius: 2px solid;" text="Pesquisar" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
