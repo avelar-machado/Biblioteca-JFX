@@ -67,7 +67,7 @@ public class Autor {
     
     @Override
     public String toString() {
-        return ""+this.code;
+        return ""+this.code +" - "+this.nome+ " "+this.apelido;
     }
     
 }

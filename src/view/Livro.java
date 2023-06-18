@@ -56,7 +56,7 @@ public class Livro extends Item {
 
     @Override
     public String toString() {
-        return ""+this.isbn;
+        return ""+this.isbn +" - " + this.titulo;
     }
     
     

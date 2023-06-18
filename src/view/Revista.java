@@ -61,7 +61,10 @@ public class Revista extends Item {
         this.numeroPaginas = numeroPaginas;
     }
     
-    
+    @Override
+    public String toString() {
+        return ""+this.id +" - " + this.titulo;
+    }
 
  
 }

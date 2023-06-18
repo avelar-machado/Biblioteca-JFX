@@ -67,6 +67,11 @@ public class CD extends Item {
 
     public void setDuracao(Time duracao) {
         this.duracao = duracao;
-    }    
+    } 
+    
+    @Override
+    public String toString() {
+        return ""+this.idCD +" - " + this.titulo;
+    }
     
 }

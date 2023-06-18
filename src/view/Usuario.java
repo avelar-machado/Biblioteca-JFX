@@ -77,7 +77,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "" + this.numeroMatricula;
+        return "" + this.numeroMatricula +" - " + this.nome +" " + this.apelido;
     }
 
 }

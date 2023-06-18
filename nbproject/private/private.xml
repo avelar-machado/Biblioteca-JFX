@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/hp/Desktop/Programming/NetBeansProjects/Biblioteca/src/controller/home/HomeController.java</file>
-            <file>file:/C:/Users/hp/Desktop/Programming/NetBeansProjects/Biblioteca/src/view/ItensEmprestados.java</file>
-            <file>file:/C:/Users/hp/Desktop/Programming/NetBeansProjects/Biblioteca/src/view/Login.java</file>
-            <file>file:/C:/Users/hp/Desktop/Programming/NetBeansProjects/Biblioteca/src/model/ItensEmprestadosModel.java</file>
-            <file>file:/C:/Users/hp/Desktop/Programming/NetBeansProjects/Biblioteca/src/controller/FXMLMainController.java</file>
-            <file>file:/C:/Users/hp/Desktop/Programming/NetBeansProjects/Biblioteca/src/controller/itensEmprestadosUser/ItensEmprestadosUserController.java</file>
-            <file>file:/C:/Users/hp/Desktop/Programming/NetBeansProjects/Biblioteca/src/model/LoginModel.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
